@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+
+    letter-spacing: -.02rem;
+}
+
+.heading-primary {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+
+    letter-spacing: -.03rem;
+
+    color: $cyan;
+
+    margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+
+    letter-spacing: -.0225rem;
+
+    color: $white;
+
+    margin-bottom: 1.8rem;
+
+    &--highlight {
+
+        color: $bright-yellow;
+
+        margin-bottom: 1.1rem;
+    }
+}

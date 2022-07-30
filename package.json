@@ -8,7 +8,7 @@
     "devserver": "live-server --port=8090",
     "start": "npm-run-all --parallel devserver watch:sass",
     "build": "sass sass/style.scss css/style.css"
-  },,
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/s0alken/single-price-grid-component.git"

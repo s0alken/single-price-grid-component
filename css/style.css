@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+}
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.03rem;
+  color: hsl(179deg, 62%, 43%);
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.0225rem;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1.8rem;
+}
+.heading-secondary--highlight {
+  color: hsl(71deg, 73%, 54%);
+  margin-bottom: 1.1rem;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(204deg, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 63.5rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template: "community community" "subscription us";
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 1.5rem 3rem hsla(212deg, 100%, 34%, 0.149);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin: 3.2rem;
+}
+.card > * {
+  padding: 4rem;
+}
+@media only screen and (max-width: 31.25rem) {
+  .card {
+    grid-template: "community" "subscription" "us";
+  }
+  .card > * {
+    padding: 2.4rem;
+  }
+}
+
+.community {
+  grid-area: community;
+}
+.community p {
+  color: hsl(218deg, 22%, 67%);
+}
+
+.subscription {
+  grid-area: subscription;
+  background: hsl(179deg, 62%, 43%);
+}
+.subscription__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.subscription__price b {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: -0.04rem;
+  color: hsl(0deg, 0%, 100%);
+  margin-right: 1.2rem;
+}
+.subscription__price span {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+  color: hsl(0deg, 0%, 100%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.subscription p {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 2.6rem;
+}
+.subscription button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.02rem;
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  padding: 1.5rem 0 1.4rem;
+  border: none;
+  background: hsl(71deg, 73%, 54%);
+  box-shadow: 0px 1rem 1rem hsla(0deg, 0%, 0%, 0.097);
+  border-radius: 0.5rem;
+}
+
+.us {
+  grid-area: us;
+  position: relative;
+  background-color: hsl(179deg, 62%, 43%);
+}
+.us:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(0deg, 0%, 100%);
+  opacity: 0.15;
+}
+.us ul {
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -0.0175rem;
+  color: hsl(0deg, 0%, 100%);
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+/*# sourceMappingURL=style.css.map */
