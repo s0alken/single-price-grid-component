@@ -122,6 +122,14 @@ body {
   background: hsl(71deg, 73%, 54%);
   box-shadow: 0px 1rem 1rem hsla(0deg, 0%, 0%, 0.097);
   border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+@media not all and (hover: none) {
+  .subscription button:hover {
+    cursor: pointer;
+    background-color: hsl(71deg, 73%, 48%);
+    transform: translateY(-0.3rem);
+  }
 }
 
 .us {

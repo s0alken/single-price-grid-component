@@ -124,6 +124,15 @@ body {
         background: $bright-yellow;
         box-shadow: 0px 1rem 1rem hsla(0, 0%, 0%, 0.097);
         border-radius: .5rem;
+        transition: all .3s;
+
+        @media not all and (hover: none) {
+            &:hover {
+                cursor: pointer;
+                background-color: $dark-yellow;
+                transform: translateY(-.3rem);
+            }
+        }
     }
 }
 
